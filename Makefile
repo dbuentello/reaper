@@ -71,7 +71,7 @@ agent-dll:
 	export GOOS=windows GOARCH=amd64 CC=x86_64-w64-mingw32-gcc CXX=x86_64-w64-mingw32-g++ CGO_ENABLED=1; \
 	go build ${LDFLAGS} ${GCFLAGS} ${ASMFLAGS} -buildmode=c-archive -o ${DIR}/main.a cmd/reaperagentdll/main.go; \
 	cp data/bin/dll/reaper.c ${DIR}; \
-	x86_64-w64-mingw32-gcc -shared -pthread -o ${DIR}/reaper.dll ${DIR}/reaper.c ${DIR}/main.a -lwinmm -lntdll -lws2_32
+	x86_64-w64-mingw32-gcc -shared -pthread -o ${DIR}/reaper.dll ${DIR}/reaper.c ${DIR}/main.a -lwinmm -lntdll -lws2_32 
 
 # Compile PRISM - Windows x64
 prism-windows:

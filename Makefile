@@ -39,7 +39,9 @@ export GO111MODULE=on
 $(shell mkdir -p ${DIR})
 
 # Change default to just make for the host OS and add MAKE ALL to do this
-default: server-windows agent-windows server-linux agent-linux server-darwin agent-darwin agent-dll agent-javascript prism-windows prism-linux prism-darwin
+default: server-windows agent-windows server-linux agent-linux server-darwin agent-darwin  prism-windows prism-linux prism-darwin
+
+#agent-dll agent-javascript
 
 all: default
 
@@ -67,8 +69,8 @@ agent-windows:
 	export GOOS=windows GOARCH=amd64;go build ${WINAGENTLDFLAGS} ${GCFLAGS} ${ASMFLAGS} -o ${DIR}/${MAGENT}-${W}.exe cmd/reaperagent/main.go
 
 # Compile Agent - Windows x64 DLL - main() - Console
-agent-dll:
-	export GOOS=windows GOARCH=amd64 CC=x86_64-w64-mingw32-gcc CXX=x86_64-w64-mingw32-g++ CGO_ENABLED=1; \
+#agent-dll:
+#	export GOOS=windows GOARCH=amd64 CC=x86_64-w64-mingw32-gcc CXX=x86_64-w64-mingw32-g++ CGO_ENABLED=1; \
 	go build ${LDFLAGS} ${GCFLAGS} ${ASMFLAGS} -buildmode=c-archive -o ${DIR}/main.a cmd/reaperagentdll/main.go; \
 	cp data/bin/dll/reaper.c ${DIR}; \
 	x86_64-w64-mingw32-gcc -shared -pthread -o ${DIR}/reaper.dll ${DIR}/reaper.c ${DIR}/main.a -lwinmm -lntdll -lws2_32
@@ -110,10 +112,10 @@ prism-darwin:
 	export GOOS=darwin;export GOARCH=amd64;go build ${LDFLAGS} -o ${DIR}/PRISM-${D} cmd/prism/main.go
 
 # Update JavaScript Information
-agent-javascript:
-	sed -i 's/var build = ".*"/var build = "${BUILD}"/' data/html/scripts/reaper.js
-	sed -i 's/var version = ".*"/var version = "${VERSION}"/' data/html/scripts/reaper.js
-	sed -i 's|var url = ".*"|var url = "${URL}"|' data/html/scripts/reaper.js
+#agent-javascript:
+#	sed -i 's/var build = ".*"/var build = "${BUILD}"/' data/html/scripts/reaper.js
+#	sed -i 's/var version = ".*"/var version = "${VERSION}"/' data/html/scripts/reaper.js
+#	sed -i 's|var url = ".*"|var url = "${URL}"|' data/html/scripts/reaper.js
 
 # Make directory 'data' and then agents, db, log, x509; Copy src folder, README, and requirements
 package-server-windows:

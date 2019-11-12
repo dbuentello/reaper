@@ -1,0 +1,21 @@
+[2019-11-12T17:05:36Z]Instantiated agent
+[2019-11-12T17:05:36Z]Received agent OPAQUE register initialization message
+[2019-11-12T17:05:38Z]OPAQUE registration complete
+[2019-11-12T17:05:40Z]Received new agent OPAQUE authentication initialization message
+[2019-11-12T17:05:42Z]Received agent OPAQUE authentication complete message
+[2019-11-12T17:05:44Z]Processing AgentInfo message:
+[2019-11-12T17:05:44Z]	Agent Version: 0.1.0ALPHA 
+[2019-11-12T17:05:44Z]	Agent Build: d6843753ac27a02997150a7b79fd9cdc9c61cf61 
+[2019-11-12T17:05:44Z]	Agent waitTime: 30s 
+[2019-11-12T17:05:44Z]	Agent skew: 3000 
+[2019-11-12T17:05:44Z]	Agent paddingMax: 4096 
+[2019-11-12T17:05:44Z]	Agent maxRetry: 7 
+[2019-11-12T17:05:44Z]	Agent failedCheckin: 0 
+[2019-11-12T17:05:44Z]	Agent proto: h2 
+[2019-11-12T17:05:44Z]	Agent KillDate: 1970-01-01T00:00:00Z
+[2019-11-12T17:06:21Z]Agent status check in
+[2019-11-12T17:06:52Z]Agent status check in
+[2019-11-12T17:07:22Z]Agent status check in
+[2019-11-12T17:07:55Z]Agent status check in
+[2019-11-12T17:08:28Z]Agent status check in
+[2019-11-12T17:08:58Z]Agent status check in

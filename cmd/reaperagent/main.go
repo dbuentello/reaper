@@ -12,11 +12,11 @@ import (
 
 	// reaper
 	"github.com/infosechoudini/reaper/pkg"
-	"github.com/infosechoudini/reaper/agent"
+	"github.com/infosechoudini/reaper/pkg/agent"
 )
 
 // GLOBAL VARIABLES
-var url = "https://127.0.0.1:443"
+var url = "https://172.16.254.1:443"
 var protocol = "h2"
 var build = "nonRelease"
 var psk = "reaper"

@@ -12,7 +12,7 @@ import (
 
 	// reaper
 	"github.com/infosechoudini/reaper/pkg"
-	"github.com/infosechoudini/reaper/pkg/banner"
+	//"github.com/infosechoudini/reaper/pkg/banner"
 	"github.com/infosechoudini/reaper/pkg/cli"
 	"github.com/infosechoudini/reaper/pkg/core"
 	"github.com/infosechoudini/reaper/pkg/logging"
@@ -22,6 +22,25 @@ import (
 // Global Variables
 var build = "nonRelease"
 var psk = "reaper"
+
+var reaperlogo = `
+			REAPER
+             ___          
+            /   \\        
+       /\\ | . . \\       
+     ////\\|     ||       
+   ////   \\ ___//\\       
+  ///      \\      \\      
+ ///       |\\      |     
+//         | \\  \\   \\    
+/          |  \\  \\   \\   
+           |   \\ /   /   
+           |    \\/   /    
+           |     \\/|     
+           |      \\|     
+           |       \\     
+           |        |     
+           |_________\\  `
 
 func main() {
 	logging.Server("Starting reaper Server version " + reaper.Version + " build " + reaper.Build)
@@ -47,7 +66,7 @@ func main() {
 	}
 	flag.Parse()
 
-	color.Blue(banner.reaperBanner1)
+	color.Blue(reaperlogo)
 	color.Blue("\t\t   Version: %s", reaper.Version)
 	color.Blue("\t\t   Build: %s", build)
 

@@ -1,0 +1,21 @@
+{
+    "base": {
+      "name": "EventVwr",
+      "type": "extended",
+      "author": ["@infosechoudini"],
+      "credits": [""],
+      "path": ["windows", "x64", "go", "privesc", "eventvwr.json"],
+      "platform": "WINDOWS",
+      "arch": "x64",
+      "lang": "Go",
+      "privilege": false,
+      "remote": "",
+      "local": [""],
+      "options": [
+      {"name": "command", "value": "", "required": true, "flag": "", "description":"Command Exec i.e. PowerShell.EXE of CMD.EXE"},
+      {"name": "ExecLocation", "value": "", "required": false, "flag": "", "description":"Binary Location to Execute with High Privs"}
+ ],
+      "description": "Calls Eventvwr, or does something, idk.",
+      "notes": "Written in native go - does more stuff - idk"
+    }
+}

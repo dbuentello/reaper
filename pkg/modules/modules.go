@@ -6,6 +6,7 @@ import (
 	"errors"
 	"fmt"
 	"github.com/infosechoudini/reaper/pkg/modules/minidump"
+	"github.com/infosechoudini/reaper/pkg/modules/eventvwr"
 	"io/ioutil"
 	"os"
 	"path"
@@ -339,6 +340,8 @@ func getExtendedCommand(m *Module) ([]string, error) {
 	switch strings.ToLower(m.Name) {
 	case "minidump":
 		extendedCommand, err = minidump.Parse(m.getMapFromOptions())
+	case "eventvwr":
+		extendedCommand, err = eventvwr.Parse(m.getMapFromOptions())
 	case "shellcodeinjection":
 		extendedCommand, err = shellcode.Parse(m.getMapFromOptions())
 	case "srdi":
